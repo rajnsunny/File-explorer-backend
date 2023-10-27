@@ -18,7 +18,7 @@ app.use(cors());
 
 app.get('/api/explorer', async (req, res) => {
     try {
-      const explorerData = await ExplorerModel.findOne({ id: '1' });
+      const explorerData = await ExplorerModel.findOne();
       res.json(explorerData);
     } catch (error) {
       console.error('Error retrieving data:', error);

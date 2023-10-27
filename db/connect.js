@@ -6,7 +6,7 @@ const ExplorerModel = require('../model/explorer');
     try{
         mongoose.set('strictQuery',false)
         
-        await mongoose.connect(process.env.DB_STRING,{ useNewUrlParser: true, useUnifiedTopology: true } )
+        await mongoose.connect(process.env.DB_STRING )
         
         console.log("DB Connected");
         
